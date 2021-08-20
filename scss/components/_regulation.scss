@@ -1,0 +1,18 @@
+.Info__titulo{
+    display: flex;
+    justify-content: center;
+}
+
+$mapa: (
+    p1: 1rem,
+    p2: 2rem,
+    p3: 3rem,
+    p4: 4rem
+);
+
+$ptama: map-get($mapa , p1 );
+
+.reglas__contenido{
+    color: white;
+    font-size: $ptama;
+}

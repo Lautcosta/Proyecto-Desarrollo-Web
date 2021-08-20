@@ -1,0 +1,121 @@
+#header img {
+  width: 40px;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #6c61e1, #797ceb, #8a96f3, #9faff8, #b8c8fc, #b8c8fc, #b8c8fc, #b8c8fc, #9faff8, #8a96f3, #797ceb, #6c61e1);
+  font-family: "Fjalla One", sans-serif;
+  animation-duration: 1s;
+  animation-name: aparecer;
+}
+
+#footer {
+  background: #6c61e1;
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.market__img {
+  width: 600px;
+}
+.market__img img {
+  width: 100%;
+}
+
+.section img {
+  object-fit: cover;
+}
+
+.Info__titulo {
+  display: flex;
+  justify-content: center;
+}
+
+.reglas__contenido {
+  color: white;
+  font-size: 1rem;
+}
+
+.blockchain__img {
+  width: 600px;
+}
+.blockchain__img img {
+  width: 100%;
+}
+
+.lenguajes__a {
+  color: black;
+}
+
+.exchanges__list {
+  padding-bottom: 10px;
+}
+.exchanges__list li {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.exchanges__list a {
+  padding-left: 15px;
+  color: white;
+}
+
+.jobs-marketing__content {
+  justify-self: center;
+  align-self: center;
+}
+
+.jobs-backend__content {
+  justify-self: center;
+  align-self: center;
+}
+
+.jobs-blockchain__content {
+  justify-self: center;
+  align-self: center;
+}
+
+.jobs-backend__img {
+  width: 600px;
+}
+.jobs-backend__img img {
+  width: 100%;
+}
+.jobs-backend__img img:hover {
+  transform: scale(1.1);
+}
+
+.jobs-marketing__img {
+  width: 600px;
+}
+.jobs-marketing__img img {
+  width: 100%;
+}
+.jobs-marketing__img img:hover {
+  transform: scale(1.1);
+}
+
+.jobs-blockchain__img {
+  width: 600px;
+}
+.jobs-blockchain__img img {
+  width: 100%;
+}
+.jobs-blockchain__img img:hover {
+  transform: scale(1.1);
+}
+
+a {
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=style.css.map */

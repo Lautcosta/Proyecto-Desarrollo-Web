@@ -1,0 +1,52 @@
+.jobs-marketing__content{
+    justify-self: center;
+    align-self: center;
+}
+
+.jobs-backend__content{
+    justify-self: center;
+    align-self: center;
+}
+
+.jobs-blockchain__content{
+    justify-self: center;
+    align-self: center;
+}
+
+$ancho: 300px;
+
+
+.jobs-backend__img{
+    width: $ancho * 2;
+    img{
+        width: 100%;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+.jobs-marketing__img{
+    width: $ancho * 2;
+    img{
+        width: 100%;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.jobs-blockchain__img{
+    width: $ancho * 2;
+    img{
+        width: 100%;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+a{
+    font-weight: 100;
+}

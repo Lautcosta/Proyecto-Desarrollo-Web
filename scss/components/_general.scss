@@ -1,0 +1,33 @@
+#header{
+    img{
+        width: 40px;
+    }
+}
+
+$colorcito: negro;
+
+body{
+    @if 1 + 1 == 2 { background-image: linear-gradient(to bottom, #6c61e1, #797ceb, #8a96f3, #9faff8, #b8c8fc, #b8c8fc, #b8c8fc, #b8c8fc, #9faff8, #8a96f3, #797ceb, #6c61e1);}
+    @else if $colorcito == negro { background-color: black;}
+    font-family: 'Fjalla One', sans-serif;
+    animation-duration: 1s;
+    animation-name: aparecer;
+}
+
+#footer{
+    background:  #6c61e1;
+    a{
+        text-decoration: none;
+        color: white;
+     }
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
