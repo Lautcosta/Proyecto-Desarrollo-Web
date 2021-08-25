@@ -1,8 +1,3 @@
-.Info__titulo{
-    display: flex;
-    justify-content: center;
-}
-
 $mapa: (
     p1: 1rem,
     p2: 2rem,
@@ -13,6 +8,10 @@ $mapa: (
 $ptama: map-get($mapa , p1 );
 
 .reglas__contenido{
-    color: white;
     font-size: $ptama;
+    line-height: 30px;
+}
+
+.boton{
+    margin-bottom: 20px;
 }

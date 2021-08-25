@@ -15,6 +15,7 @@
   <!-- Bootstrp -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e190eaf3f8.js" crossorigin="anonymous"></script>
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,16 +55,8 @@
           <li class="nav-item">
             <a class="nav-link" href="exchanges.html">Exchanges</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="jobs.html" id="navbarDropdownMenuLink" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Jobs
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="jobs.html">Software Engineer</a>
-              <a class="dropdown-item" href="jobs.html">Marketing Management</a>
-              <a class="dropdown-item" href="jobs.html">Backend Developer</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="jobs.html">Jobs</a>
           </li>
         </ul>
       </div>
@@ -72,50 +65,54 @@
   <!-- /Header -->
 
   <!-- Main -->
-  <main class="pt-4 pb-4">
-    <div class="container">
-      <div class="row">
-        <div class="col align-self-center">
-          <div class="row d-flex align-items-center align-self-center">
-            <div class="col-sm-6">
-              <div class="card bg-dark text-white">
-                <div class="card-body m-auto">
-                  <h1 class="card-title">The Crypto For The Students (cambio entrega complementaria)</h1>
-                  <p class="card-text">join the largest crypto currency for technology students</p>
-                  <a href="user.html" class="btn btn-primary">Join</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 container market__img">
-          <img src="media/market.svg" class="mx-auto d-block" alt="market">
-        </div>
-      </div>
-    </div>
-
-    <section>
-      <div class="container-fluid">
+  <main>
+    
+    <section class="bg pt-5">
+      <div class="container">
         <div class="row">
-          <div class="col">
-            <h2 class="text-center">Businesses Where You Can Pay With The Currency</h2>
+          <div class="col-12 col-md-6">
+            <h1 class="titulo pb-5">Coder Crypto is the crypto for technology students</h1>
+            <h4 class="subtitulo pb-4">
+              Is more than just a cryto.It s the best place to learn about Crypto.
+            </h4>
+            <button> <a href="user.html">Join now</a></button>
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <img src="media/market.png" class="img-fluid" alt="imagen de monedas CoderCrypto">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="media/brand.png" class="d-block w-100" alt="...">
+    <article>
+      <div class="container pt-5">
+        <div class="row pb-5">
+          <div class="col-sm-12 col-md-12">
+            <h2 class="text-center">App & wallet</h2>
+            <h5 class="text-center">fast and convenient</h5>
           </div>
-          <div class="carousel-item">
-            <img src="media/brand2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-12 col-md-4">
+            <i class="fas fa-credit-card"></i>
+            <p>0% Commission</p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <i class="fas fa-tachometer-alt"></i>
+            <p >Instan Execution</p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <i class="fas fa-star"></i>
+            <p>Works Great</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 d-flex justify-content-center">
+            <img class="img-phone img-fluid" src="media/phone.svg" alt="">
           </div>
         </div>
       </div>
-    </section>
+    </article>
 
   </main>
   <!-- /Main -->

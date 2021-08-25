@@ -1,24 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 #header{
     img{
         width: 40px;
     }
+    background-color: #6868F6;
+    margin: 0;
+    padding: 0;
+    
 }
+
 
 $colorcito: negro;
 
 body{
-    @if 1 + 1 == 2 { background-image: linear-gradient(to bottom, #6c61e1, #797ceb, #8a96f3, #9faff8, #b8c8fc, #b8c8fc, #b8c8fc, #b8c8fc, #9faff8, #8a96f3, #797ceb, #6c61e1);}
-    @else if $colorcito == negro { background-color: black;}
     font-family: 'Fjalla One', sans-serif;
     animation-duration: 1s;
     animation-name: aparecer;
 }
 
 #footer{
-    background:  #6c61e1;
+    background:  #f3efff;
     a{
         text-decoration: none;
-        color: white;
+        color: #6962B7;
      }
 }
 
@@ -31,3 +40,9 @@ body{
     }
  }
  
+
+.Info__titulo{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}

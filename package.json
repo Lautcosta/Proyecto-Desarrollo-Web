@@ -12,5 +12,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lautcosta/Proyecto-Desarrollo-Web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lautcosta/Proyecto-Desarrollo-Web/issues"
+  },
+  "homepage": "https://github.com/Lautcosta/Proyecto-Desarrollo-Web#readme",
   "description": ""
 }

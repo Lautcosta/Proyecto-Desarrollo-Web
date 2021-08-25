@@ -1,20 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  background-color: #6868F6;
+  margin: 0;
+  padding: 0;
+}
 #header img {
   width: 40px;
 }
 
 body {
-  background-image: linear-gradient(to bottom, #6c61e1, #797ceb, #8a96f3, #9faff8, #b8c8fc, #b8c8fc, #b8c8fc, #b8c8fc, #9faff8, #8a96f3, #797ceb, #6c61e1);
   font-family: "Fjalla One", sans-serif;
   animation-duration: 1s;
   animation-name: aparecer;
 }
 
 #footer {
-  background: #6c61e1;
+  background: #f3efff;
 }
 #footer a {
   text-decoration: none;
-  color: white;
+  color: #6962B7;
 }
 
 @keyframes aparecer {
@@ -25,48 +35,108 @@ body {
     opacity: 1;
   }
 }
+.Info__titulo {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
 .market__img {
-  width: 600px;
+  width: 100px;
 }
 .market__img img {
   width: 100%;
+  object-fit: cover;
 }
 
 .section img {
   object-fit: cover;
 }
 
-.Info__titulo {
-  display: flex;
-  justify-content: center;
+.img-phone {
+  width: 50%;
+}
+.img-phone img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg {
+  background-color: #6868F6;
+}
+
+.titulo {
+  color: white;
+}
+
+.subtitulo {
+  color: white;
+}
+
+button {
+  background-color: #150f5a;
+  border: none;
+  color: #6962B7;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.fas {
+  font-size: 50px;
 }
 
 .reglas__contenido {
-  color: white;
   font-size: 1rem;
+  line-height: 30px;
 }
 
-.blockchain__img {
-  width: 600px;
+.boton {
+  margin-bottom: 20px;
 }
-.blockchain__img img {
-  width: 100%;
+
+.blockchain__iframe {
+  margin-bottom: 6rem;
+}
+
+.blockchain__text {
+  line-height: 3rem;
 }
 
 .lenguajes__a {
-  color: black;
+  color: #6962B7;
 }
 
-.exchanges__list {
-  padding-bottom: 10px;
+.btn {
+  background-color: #150f5a;
 }
-.exchanges__list li {
-  font-size: 1.2rem;
+
+.card {
+  background-color: #F4F5F9;
+}
+
+.ulli {
+  margin-bottom: 100px;
+}
+.ulli li {
+  background-color: #F4F5F9;
+  margin-bottom: 10px;
   padding: 5px;
+  border-radius: 13px;
+  list-style: none;
+  width: [object Object] px;
+  height: [object Object] px;
+  background: #F8F8F8;
+  border: solid #BDBDBD 1px;
+  box-shadow: -2px 1px 7px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -2px 1px 7px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -2px 1px 7px rgba(0, 0, 0, 0.5);
 }
-.exchanges__list a {
-  padding-left: 15px;
-  color: white;
+.ulli a {
+  color: #6962B7;
 }
 
 .jobs-marketing__content {

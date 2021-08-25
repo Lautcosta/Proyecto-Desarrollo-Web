@@ -1,7 +1,8 @@
 .market__img{
-    width: 600px;
+    width: 100px;
     img{
         width: 100%;
+        object-fit: cover;
     }
  }
 
@@ -9,4 +10,39 @@
     img{
         object-fit: cover;
     }
+}
+
+.img-phone{
+    width: 50%;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.bg{
+    background-color: #6868F6;   
+}
+
+.titulo{
+    color:white;
+}
+
+.subtitulo{
+    color:white;
+}
+button {
+    background-color: #150f5a; 
+    border: none;
+    color: #6962B7;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.fas{
+    font-size: 50px;
 }
