@@ -53,12 +53,14 @@ body {
   object-fit: cover;
 }
 
-.img-phone {
-  width: 100%;
-}
-.img-phone img {
+.container-md {
   width: 100%;
   object-fit: cover;
+}
+@media (min-width: 768px) {
+  .container-md img {
+    width: 50%;
+  }
 }
 
 .bg {
