@@ -91,6 +91,10 @@ button {
   font-size: 50px;
 }
 
+.navbar-right {
+  margin-right: 100px;
+}
+
 .reglas__contenido {
   font-size: 1rem;
   line-height: 30px;
