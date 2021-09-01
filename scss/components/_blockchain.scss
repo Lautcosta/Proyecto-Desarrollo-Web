@@ -1,15 +1,28 @@
-.blockchain__iframe{
-    margin-bottom: 6rem;
-}
-
 .blockchain__text{
     line-height: 3rem;
 }
 
 .blockchain2{
-    width: 70%;
+    width: 60%;
+    object-fit: cover;
+
+    @media (min-width: 768px) { 
+        img{ 
+            width: 50%;
+            
+        }
+    }
+
 }
 
 .content{
     width: dsd;
+}
+
+.imgBlockchain{
+    animation: heartBeat; 
+    animation-duration: 10s; 
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    
 }

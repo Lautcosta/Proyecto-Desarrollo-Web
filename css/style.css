@@ -41,6 +41,12 @@ body {
   padding: 50px;
 }
 
+.textInformation {
+  line-height: 2.2;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
 .market__img {
   width: 100px;
 }
@@ -108,8 +114,8 @@ button {
   margin-bottom: 20px;
 }
 
-.blockchain__iframe {
-  margin-bottom: 6rem;
+.bgRegulation {
+  background-color: #8686e0;
 }
 
 .blockchain__text {
@@ -117,11 +123,24 @@ button {
 }
 
 .blockchain2 {
-  width: 70%;
+  width: 60%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .blockchain2 img {
+    width: 50%;
+  }
 }
 
 .content {
   width: dsd;
+}
+
+.imgBlockchain {
+  animation: heartBeat;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 
 .lenguajes__a {
@@ -178,9 +197,6 @@ button {
 .jobs-backend__img img {
   width: 100%;
 }
-.jobs-backend__img img:hover {
-  transform: scale(1.1);
-}
 
 .jobs-marketing__img {
   width: 600px;
@@ -188,18 +204,12 @@ button {
 .jobs-marketing__img img {
   width: 100%;
 }
-.jobs-marketing__img img:hover {
-  transform: scale(1.1);
-}
 
 .jobs-blockchain__img {
   width: 600px;
 }
 .jobs-blockchain__img img {
   width: 100%;
-}
-.jobs-blockchain__img img:hover {
-  transform: scale(1.1);
 }
 
 a {
