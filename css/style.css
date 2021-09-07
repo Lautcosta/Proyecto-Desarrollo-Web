@@ -118,6 +118,11 @@ button {
   background-color: #8686e0;
 }
 
+.Experts {
+  background-color: #8686e0;
+  border-radius: 25px;
+}
+
 .blockchain__text {
   line-height: 3rem;
 }
@@ -153,6 +158,14 @@ button {
 
 .card {
   background-color: #F4F5F9;
+}
+
+.pruebita {
+  border: 1px solid #cfc0c0;
+}
+
+.imgIdiomas {
+  width: 80%;
 }
 
 .ulli {
