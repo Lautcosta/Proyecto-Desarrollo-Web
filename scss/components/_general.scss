@@ -3,7 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
 
+
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
 #header{
     img{
         width: 40px;
@@ -50,6 +58,6 @@ body{
 
 .textInformation{
     line-height: 2.2;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-family: 'Montserrat', sans-serif;
 }
