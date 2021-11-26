@@ -113,6 +113,15 @@ button {
   font-size: 20px;
 }
 
+.hrColor {
+  border-color: black;
+}
+
+#paddingChange {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
+
 .reglas__contenido {
   font-size: 1rem;
   line-height: 30px;
@@ -235,6 +244,18 @@ button {
 
 a {
   font-weight: 100;
+}
+
+.whiteList {
+  background-color: #F4F5F9;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 7px;
+  list-style: none;
+  width: [object Object] px;
+  height: [object Object] px;
+  background: #F8F8F8;
+  border: solid #BDBDBD 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

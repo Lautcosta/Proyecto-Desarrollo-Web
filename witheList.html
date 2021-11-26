@@ -1,21 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
   <!-- SEO -->
-  <meta name="description" content="Pagina en la cual se enlistan las exchanges donde pueden comprar la moneda">
+  <meta name="description" content="Aqui encontraran los documentos con respecto a la regulacion de la moneda">
   <meta name="keywords" content="Crypto, Bitcoin, Ethereum, asset, money, blockchain, Exchanges, Binance">
+
+
   <!-- Open graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="CoderCrypto">
   <meta property="og:description" content="The cryto for technology students">
   <meta property="og:image" content="media/logo.png">
   <meta property="og:site_name" content="CoderCrypto">
+
+
   <!-- Bootstrp -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
   <!-- Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -26,11 +34,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
   <!-- Css -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="media/logo.svg" type="image/x-icon">
-  <title>Choose your favorite exchange|CoderCrypto</title>
+  <title>Learn about the regulation of the coin | CoderCrypto</title>
 </head>
+
+
+
 
 <body>
   <!-- Header -->
@@ -59,13 +72,13 @@
             <a class="nav-link" href="communities.html">Communities</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="exchanges.html">Exchanges</a>
+            <a class="nav-link" href="exchanges.html">Exchanges</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="jobs.html">Jobs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="witheList.html">White List</a>
+            <a class="nav-link active" href="witheList.html">White List</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
@@ -81,40 +94,69 @@
   <!-- Main -->
   <main>
 
-    <section>
 
-      <section>
-        <div class="container Info">
-          <div class="row">
-            <div class="col">
-              <h1 class="Info__titulo">EXCHANGES</h1>
-              <p class="text-center mb-5 textInformation">These are the exchanges where you can buy the currency</p>
-            </div>
+
+    <section>
+      <div class="container Info">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <h1 class="Info__titulo">White List</h1>
+            <p class="text-center mb-2 textInformation">
+              Put your information below and we will add you to the white list of the token </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    
 
-
-      <div class="container">
+    <section>
+      
+      <div class="container mt-5 mb-5">
         <div class="row text-center">
           <div class="col">
-            <ul class="ulli">
-              <li><a href="https://www.binance.com/ru" target="_blank">Binance</a></li>
-              <li><a href="https://pro.coinbase.com/" target="_blank">Coinbase Exchange</a></li>
-              <li><a href="https://www.bithumb.com/" target="_blank">Bithumb</a></li>
-              <li><a href="https://www.huobi.com/es-es/" target="_blank">Huobi Global</a></li>
-              <li><a href="https://www.kraken.com" target="_blank">Kraken</a></li>
-              <li><a href="https://ftx.com/" target="_blank">FTX</a></li>
-              <li><a href="https://www.kucoin.com" target="_blank">KuCoin</a></li>
-              <li><a href="https://www.bitfinex.com" target="_blank">Bitfinex</a></li>
-            </ul>
+              <ul id="personass" class="whiteList">
+                
+              </ul>
           </div>
         </div>
       </div>
 
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+            <form id="forma">
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="nombre">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="apellido">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              </div>
+
+            </form>
+
+            <button type="submit" class="btn btn-primary mb-5" id="botoncito">Submit</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    
+
   </main>
   <!-- /Main -->
-
 
   <!-- Footer -->
   <footer class="page-footer font-small blue pt-4" id="footer">
@@ -178,12 +220,32 @@
     </div>
   </footer>
   <!-- /Footer -->
+
+  <!------------------------------------------------------------------->
+
+  <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <!-- /Bootstrap JS -->
+
+  <!------------------------------------------------------------------->
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--/Jquery -->
+    
+    
+  <!------------------------------------------------------------------->
+    
+    
+    <!-- Script Propio -->
+    <script src="js/persona.js"></script>
+    <script src="js/whiteList.js"></script>
+    <!--/Script Propio -->
+  
+
 </body>
 
 </html>
