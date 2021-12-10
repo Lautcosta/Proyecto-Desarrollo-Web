@@ -4,19 +4,20 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
 }
 
 
 html:focus-within {
     scroll-behavior: smooth;
-  }
+}
   
 #header{
     img{
         width: 40px;
     }
     background-color: #6868F6;
+  /*   background-color: #2B214D; ; */
     margin: 0;
     padding: 0;
     
@@ -61,3 +62,16 @@ body{
     font-size: 1.8rem;
     font-family: 'Montserrat', sans-serif;
 }
+
+.darkMode{
+    color: white;
+    border: none;
+    background-color: #6868F6;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+}
+

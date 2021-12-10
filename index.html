@@ -92,7 +92,9 @@
           <li class="nav-item">
             <a class="nav-link" href="user.html">Sing-In <i class="fas fa-sign-in-alt"></i></a>
           </li>
-        </ul>
+        </ul>    
+        <button type="button" class="btn btn-outline-secondary darkMode" id="tema">
+        </button>
       </div>
     </nav>
   </header>
@@ -105,7 +107,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6">
-            <h1 class="titulo pb-5">Coder Crypto is the crypto for technology students</h1>
+            <h1 class="titulo pb-5 h1Titulo">Coder Crypto is the crypto for technology students</h1>
             <h4 class="subtitulo pb-4">
               Is more than just a cryto.It s the best place to learn about Crypto.
             </h4>
@@ -121,7 +123,7 @@
 
     <!-- Seccion de calculo de cambio -->
     <section>
-      <div class="container" id="paddingChange">
+      <div class="container"  id="paddingChange">
         <div class="row text-center mb-5">
           <div class="col">
             <hr class="hrColor">
@@ -131,14 +133,14 @@
           </div>
         </div>
         <div class="row text-center">
-          <div class="col">USDT</div>
-          <div class="col">CODER CRYPTO</div>
+          <div class="col"><h5>USDT</h5></div>
+          <div class="col"><h5>CODER CRYPTO</h5></div>
         </div>
         <div class="row pb-5">
           <div class="col">
-            <div class="input-group">
+            <div class="input-group ">
               <input type="number" aria-label="First name" class="form-control" id="input1">
-              <button class="btn btn-primary" id="botoncito"><i class="fas fa-exchange-alt"></i></button>
+              <button class="btn btn-primary" id="botoncito"><i class="swapIcon fas fa-exchange-alt"></i></button>
               <input type="number" aria-label="Last name" class="form-control" id="input2">
             </div>
           </div>
@@ -149,7 +151,7 @@
 
 
     <!-- Articulo sobre la aplicacion movil -->
-    <article>
+    <article class="ss">
       <div class="container-md pt-5 mt-5">
         <div class="row pb-5">
           <div class="col-sm-12 col-md-12">
@@ -243,11 +245,18 @@
         </div>
       </div>
     </div>
-    <div class="text-center py-3">© 2020 Copyright:
+    <div class="text-center py-3">
+            © 2020 Copyright:
       <a href="#"> Costa Peralta Lautaro</a>
     </div>
   </footer>
   <!-- /Footer -->
+
+  <!------------------------------------------------------------------->
+
+  <!--Script ion-icon-->
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <!--/Script ion-icon-->
 
   <!------------------------------------------------------------------->
 
@@ -271,6 +280,7 @@
 
 
   <!-- Script Propio -->
+  <script src="js/darkMode.js"></script>
   <script src="js/swap.js"></script>
   <!--/Script Propio -->    
   

@@ -1,38 +1,74 @@
+// ----------------------- Variables y Constantes -----------------------
+
+const forma = document.forms["forma"];
+const nombre = forma["nombre"];
+const apellido = forma["apellido"];
+const email = forma["email"];
 
 // Array vacio donde se guardan los datos que ingrese el usuario por el form
-const personas = [];
+let personas = [];
 
 
-//Funcion para Mostrar a las Personas
-function mostrarPersonas(){
-    let texto = '';
-    for(let persona of personas){
-        texto += `<li> ◾ Name : ${persona.nombre} ◾ Last Name : ${persona.apellido} ◾ Email : ${persona.correo}</li> `
-    }
-    document.getElementById("personass").innerHTML = texto;
-
-}
-
-const boton = document.getElementById("botoncito");
-boton.addEventListener('click',agregarPersona)
+// ----------------------- Funciones -----------------------
 
 
 // Funcion donde se envia los datos del form al array
+
 function agregarPersona(){
-    const forma = document.forms["forma"];
-    const nombre = forma["nombre"];
-    const apellido = forma["apellido"];
-    const email = forma["email"];
+
+
     if (nombre.value != '' && apellido.value != '' && email.value != ''){
-         const persona = new Persona(nombre.value, apellido.value, email.value);
-         console.log(persona);
-         personas.push(persona);
-        mostrarPersonas();
+         let persona = new Persona(nombre.value, apellido.value, email.value);
+         
+         personas.push(persona); 
+
+         localStorage.setItem("clave",JSON.stringify(personas));
+
+         
+         imprimirPersonas();
+
+         
     }else{
         console.log('Datos vacios')
     }
+
+   
 }
+
+//Funcion para Mostrar a las Personas
+
+ function imprimirPersonas(){
     
+    let imprimir = JSON.parse(localStorage.getItem("clave"));
+
+    if(imprimir != undefined){
+
+        console.log("defined")
+        
+
+        imprimir.forEach(element => {
+            console.log(element)
+            
+             impresion.innerHTML += `<li>◾ Name : ${element._nombre} ◾ Last Name : ${element._apellido} ◾ Email : ${element._correo}</li>`
+        });
 
 
-window.onload = mostrarPersonas();
+    }else{
+        console.log("undefined")
+    }
+
+}
+
+
+
+// ----------------------- Eventos -----------------------
+
+
+// Evento click
+const boton = document.getElementById("botoncito");
+boton.addEventListener('click',agregarPersona)
+
+// Evento para que todo se termine de cargar y luego iniciar
+
+window.onload = agregarPersona();
+window.onload = imprimirPersonas();
