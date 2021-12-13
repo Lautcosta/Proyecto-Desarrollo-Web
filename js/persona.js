@@ -1,10 +1,10 @@
 // Clase Persona
 
 class Persona {
-    constructor(nombre,apellido,correo){
+    constructor(nombre,apellido,wallet){
         this._nombre = nombre;
         this._apellido = apellido;
-        this._correo = correo;
+        this._wallet = wallet;
     }
 
     // Metodo get
@@ -14,8 +14,8 @@ class Persona {
     get apellido(){
         return this._apellido;
     }
-    get correo(){
-        return this._correo;
+    get wallet(){
+        return this.wallet;
     }
 
     // Metodo set
@@ -26,8 +26,8 @@ class Persona {
     set apellido(apellido){
         this._apellido = apellido;
     }
-    set correo(correo){
-        this._correo = correo;
+    set wallet(wallet){
+        this._correo = this.wallet;
     }
 
 }

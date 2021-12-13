@@ -3,9 +3,10 @@
 const forma = document.forms["forma"];
 const nombre = forma["nombre"];
 const apellido = forma["apellido"];
-const email = forma["email"];
+const wallet = forma["wallet"];
 
 // Array vacio donde se guardan los datos que ingrese el usuario por el form
+
 let personas = [];
 
 
@@ -16,17 +17,19 @@ let personas = [];
 
 function agregarPersona(){
 
+    
 
-    if (nombre.value != '' && apellido.value != '' && email.value != ''){
-         let persona = new Persona(nombre.value, apellido.value, email.value);
-         
+    if (nombre.value != '' && apellido.value != '' && wallet.value != ''){
+         let persona = new Persona(nombre.value, apellido.value, wallet.value);
+
          personas.push(persona); 
+           
 
          localStorage.setItem("clave",JSON.stringify(personas));
+     
 
-         
          imprimirPersonas();
-
+           
          
     }else{
         console.log('Datos vacios')
@@ -35,27 +38,19 @@ function agregarPersona(){
    
 }
 
+
 //Funcion para Mostrar a las Personas
 
  function imprimirPersonas(){
-    
-    let imprimir = JSON.parse(localStorage.getItem("clave"));
 
-    if(imprimir != undefined){
+   
+    let imprimir = JSON.parse(localStorage.getItem("clave"));    
 
-        console.log("defined")
+    lista.innerHTML='';
         
-
-        imprimir.forEach(element => {
-            console.log(element)
-            
-             impresion.innerHTML += `<li>◾ Name : ${element._nombre} ◾ Last Name : ${element._apellido} ◾ Email : ${element._correo}</li>`
-        });
-
-
-    }else{
-        console.log("undefined")
-    }
+    for (const element of imprimir) {
+     lista.innerHTML += `<li>◾ Name : ${element._nombre} ◾ Last Name : ${element._apellido} ◾ Wallet : ${element._wallet}</li>`
+       } 
 
 }
 
@@ -65,6 +60,7 @@ function agregarPersona(){
 
 
 // Evento click
+const lista = document.getElementById("impresion");
 const boton = document.getElementById("botoncito");
 boton.addEventListener('click',agregarPersona)
 
